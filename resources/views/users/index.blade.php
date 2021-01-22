@@ -73,6 +73,7 @@
                                                 <input type="submit" class="text-red-600 hover:text-red-900 mb-2 mr-2" value="Delete">
                                             </form>
                                         </td>
+
                                     </tr>
                                 @endforeach
                                 </tbody>

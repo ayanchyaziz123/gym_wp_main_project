@@ -42,7 +42,7 @@
                 <td>{{$member->address}}</td>
                 <td>{{$member->fees}}</td>
                 <td>
-                    <form action="{{route('members.destroy', $member->id)}}" method="POST">
+                    <form action="{{route('members.destroy', $member->id)}}" method="POST" onsubmit="return confirm('Are you sure?');">
                         <a class="btn btn-primary" href="{{route('members.show', $member->id)}}"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         <a class="btn btn-warning m-2" href="{{route('members.edit', $member->id)}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                         @csrf
