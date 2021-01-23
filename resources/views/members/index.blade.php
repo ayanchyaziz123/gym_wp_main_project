@@ -19,7 +19,11 @@
 
 <div class="container">
     <a class="btn btn-info mt-5 mb-2" href="{{route('members.create')}}">Add a Member</a>
-    <table class="table table-striped">
+    <div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    </div>
+    
+    <table class="table table-striped" id="myTable">
         <thead>
             <tr>
                 <th scope="col">User name</th>
