@@ -151,10 +151,12 @@
           <div class="modal fade bd-example-modal-lgg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content p-5">
+              <div class="modal-header">
+          <h4 class="modal-title">Location Information</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
                 <div class="row row-content">
-                  <div class="col-12">
-                    <h3>Location Information</h3>
-                  </div>
+              
                   <div class="col-12 col-sm-4 offset-sm-1">
                     <h5>Our Address</h5>
                     <address style="font-size: 100%">
@@ -188,9 +190,13 @@
           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content p-5">
+              <div class="modal-header">
+          <h4 class="modal-title">Our History</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
               <div class="row mt-5 mb-5">
             <div class="col-12 col-md-6">
-                <h2>Our History</h2>
+                
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                 <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
