@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+Route::resource('contacts', \App\Http\Controllers\ContactController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -27,6 +28,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', \App\Http\Controllers\UsersController::class);
     Route::resource('members', \App\Http\Controllers\MembersController::class);
     
+    
 });
+
 
 
