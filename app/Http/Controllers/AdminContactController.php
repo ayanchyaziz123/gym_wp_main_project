@@ -2,19 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
-class ContactController extends Controller
+class AdminContactController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-       
+        $contacts = Contact::latest()->paginate(5);
+        return view('contact.index', compact('contacts'));
     }
 
     /**

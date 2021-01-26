@@ -45,16 +45,16 @@
       <ul class="navbar-nav">
         <li class="nav-item">
 
-          <a class="nav-link" data-toggle="modal" data-target="#myModal" href="">Contact</a>
+          <a class="nav-link" data-toggle="modal" data-target="#myModal" href="">Contact Us</a>
         </li>
       </ul>
     </div>
   </nav>
   @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif
+  <div class="alert alert-success">
+    <p>{{ $message }}</p>
+  </div>
+  @endif
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">
@@ -62,11 +62,11 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title">Contact Us</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <form action="{{route('contacts.store')}}" method="POST">
-        @csrf
+          @csrf
           <!-- Modal body -->
           <div class="modal-body">
             <div class="form-group">
@@ -142,17 +142,34 @@
         <p>Lorem ipsum dolor sit ame.</p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link active bg-info" href="{{route('welcome')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link"  data-toggle="modal" data-target=".bd-example-modal-lgg" href="">Location</a>
           </li>
+          <!-- The Modal -->
+          <div class="modal fade bd-example-modal-lgg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content p-5">
+              <h4>Location</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aliquam rerum consequatur, cumque, 
+                consectetur, maiores in hic accusamus molestias beatae a temporibus totam velit magni magnam praesentium officiis non? Quibusdam.
+              </div>
+            </div>
+          </div>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link"  data-toggle="modal" data-target=".bd-example-modal-lg" href="">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
+          <!-- The Modal -->
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content p-5">
+              <h4>Our Gym</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aliquam rerum consequatur, cumque, 
+                consectetur, maiores in hic accusamus molestias beatae a temporibus totam velit magni magnam praesentium officiis non? Quibusdam.
+              </div>
+            </div>
+          </div>
         </ul>
         <hr class="d-sm-none">
       </div>
