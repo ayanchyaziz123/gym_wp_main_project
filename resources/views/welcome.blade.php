@@ -23,9 +23,17 @@
     }
 
     .ccc {
-      height: 100;
-      width: 100;
+      height: 100px;
+      width: 100px;
     }
+    .row-setting {
+        margin: 80px 0px !important;
+      }
+      .imgsetting {
+        border-radius: 40%;
+        height: 90px;
+        width: 90px;
+      }
   </style>
 </head>
 
@@ -58,7 +66,7 @@
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content p-3">
 
         <!-- Modal Header -->
         <div class="modal-header">
@@ -151,12 +159,12 @@
           <div class="modal fade bd-example-modal-lgg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content p-5">
-              <div class="modal-header">
-          <h4 class="modal-title">Location Information</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-                <div class="row row-content">
-              
+                <div class="modal-header">
+                  <h4 class="modal-title">Location Information</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="row row-content mt-2">
+
                   <div class="col-12 col-sm-4 offset-sm-1">
                     <h5>Our Address</h5>
                     <address style="font-size: 100%">
@@ -190,46 +198,46 @@
           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content p-5">
-              <div class="modal-header">
-          <h4 class="modal-title">Our History</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-              <div class="row mt-5 mb-5">
-            <div class="col-12 col-md-6">
-                
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
-            </div>
-                       <div class="col-12 col-sm-6">
-                <div class="card">
-                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
-                    <div class="card-body">
-                        <dl class="row">
-                            <dt class="col-6">Started</dt>
-                            <dd class="col-6">3 Feb. 2013</dd>
-                            <dt class="col-6">Major Stake Holder</dt>
-                            <dd class="col-6">HK Fine Foods Inc.</dd>
-                            <dt class="col-6">Last Year's Turnover</dt>
-                            <dd class="col-6">$1,250,375</dd>
-                            <dt class="col-6">Employees</dt>
-                            <dd class="col-6">40</dd>
-                        </dl>
-                    </div>
+                <div class="modal-header">
+                  <h4 class="modal-title">Our History</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-             <div class="col-12">
-                <div class="card card-body bg-light">
-                    <blockquote class="blockquote">
+                <div class="row mt-5 mb-5">
+                  <div class="col-12 col-md-6">
+
+                    <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                    <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="card">
+                      <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                      <div class="card-body">
+                        <dl class="row">
+                          <dt class="col-6">Started</dt>
+                          <dd class="col-6">3 Feb. 2013</dd>
+                          <dt class="col-6">Major Stake Holder</dt>
+                          <dd class="col-6">HK Fine Foods Inc.</dd>
+                          <dt class="col-6">Last Year's Turnover</dt>
+                          <dd class="col-6">$1,250,375</dd>
+                          <dt class="col-6">Employees</dt>
+                          <dd class="col-6">40</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card card-body bg-light">
+                      <blockquote class="blockquote">
                         <p class="mb-0">You better cut the pizza in four pieces because
-                            I'm not hungry enough to eat six.</p>
+                          I'm not hungry enough to eat six.</p>
                         <footer class="blockquote-footer">Yogi Berra,
-                            <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
+                          <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
                             P. Pepe, Diversion Books, 2014</cite>
                         </footer>
-                    </blockquote>
+                      </blockquote>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
               </div>
             </div>
           </div>
@@ -250,19 +258,37 @@
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       </div>
     </div>
+      <!--row 2 -->
+      <div style="margin-top: 200px"></div>
+      <h1 style="text-align: center; font-weight: bold">Services</h1>
+      <div class="row text-center row-setting">
+        <div class="col-sm-4 col-md-4 d-block m-auto">
+          <div class="imgsetting d-block m-auto bg-warning">
+            <i class="fa fa-id-card fa-3x text-white mt-4"></i>
+          </div>
 
+          <h2>Information</h2>
+          <p>through this website you will get all information of MU cse44th</p>
+        </div>
 
-    <div class="row">
-      <div class="col-4">
-        ayans blog
+        <div class="col-sm-4">
+          <div class="imgsetting d-block m-auto bg-warning">
+            <i class="fa fa-keyboard-o fa-3x text-white mt-4"></i>
+          </div>
+
+          <h2>Learning</h2>
+          <p>You can learn through this website</p>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="imgsetting d-block m-auto bg-warning">
+            <i class="fa fa-stack-exchange fa-3x text-white mt-4"></i>
+          </div>
+
+          <h2>Sharing</h2>
+          <p>You can share your idea through this website</p>
+        </div>
       </div>
-      <div class="col-4">
-        ayans blog
-      </div>
-      <div class="col-4">
-        ayans blog
-      </div>
-    </div>
 
 
   </div>
