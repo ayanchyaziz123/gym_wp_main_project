@@ -18,6 +18,7 @@ Route::get('/', function () {
 })->name('welcome');
 Route::resource('contacts', \App\Http\Controllers\ContactController::class);
 Route::resource('adminContacts', \App\Http\Controllers\AdminContactController::class);
+Route::resource('adminBlog', \App\Http\Controllers\BlogController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

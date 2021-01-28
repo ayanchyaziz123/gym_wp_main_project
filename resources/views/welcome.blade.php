@@ -44,8 +44,8 @@
     <p>Resize this responsive page to see the effect!</p>
   </div>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Home</a>
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,7 +53,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
 
-          <a class="nav-link" data-toggle="modal" data-target="#myModal" href="">Contact Us</a>
+          <a class="nav-link" data-toggle="modal" data-target="#myModal" href=""><i class="fa fa-comment" aria-hidden="true"></i> Contact Us</a>
         </li>
       </ul>
     </div>
@@ -110,21 +110,21 @@
     </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://media.istockphoto.com/photos/empty-gym-picture-id1132006407?k=6&m=1132006407&s=612x612&w=0&h=vOx89bJoTm6tqEMRRZxsmzfdr1jwrmrbE-0yfm7sm74=" alt="Los Angeles" width="1100" style="max-height: 450px;">
+        <img src="https://media.istockphoto.com/photos/empty-gym-picture-id1132006407?k=6&m=1132006407&s=612x612&w=0&h=vOx89bJoTm6tqEMRRZxsmzfdr1jwrmrbE-0yfm7sm74=" alt="Los Angeles" width="1100" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>Los Angeles</h3>
           <p>We had such a great time in LA!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://media.istockphoto.com/photos/gym-without-people-with-large-group-of-exercise-machines-picture-id936381808?k=6&m=936381808&s=612x612&w=0&h=pUrYUmK7M1QZk710iAA19Tcx4TZKmCTmVOBXt-8wq_0=" alt="Chicago" width="1100" height="500" style="max-height: 450px;">
+        <img src="https://media.istockphoto.com/photos/gym-without-people-with-large-group-of-exercise-machines-picture-id936381808?k=6&m=936381808&s=612x612&w=0&h=pUrYUmK7M1QZk710iAA19Tcx4TZKmCTmVOBXt-8wq_0=" alt="Chicago" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>Chicago</h3>
           <p>Thank you, Chicago!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://media.istockphoto.com/photos/gym-picture-id952552262?k=6&m=952552262&s=612x612&w=0&h=tJ2sVXHvZrr_diY8TlbeoF7bzzpycgU01raoyx-RF6M=" alt="New York" width="1100" height="500" style="max-height: 450px;">
+        <img src="https://media.istockphoto.com/photos/gym-picture-id952552262?k=6&m=952552262&s=612x612&w=0&h=tJ2sVXHvZrr_diY8TlbeoF7bzzpycgU01raoyx-RF6M=" alt="New York" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>New York</h3>
           <p>We love the Big Apple!</p>
@@ -142,18 +142,19 @@
   <div class="container" style="margin-top:30px">
     <div class="row">
       <div class="col-sm-4">
-        <h2>About Us</h2>
+        <h2>About Me</h2>
         <h5>Photo of me:</h5>
         <img src="https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg" class="img-fluid">
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <p class="mt-3">Email : aaziz9642@gmail.com</p>
+        <p>Mobile : 01759773446</p>
         <h3>Some Links</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
+        <p>to see information about us</p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link active bg-info" href="{{route('welcome')}}">Home</a>
+            <a class="nav-link active bg-info" href="{{route('welcome')}}"><i class="fa fa-home" aria-hidden="true"></i>  Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lgg" href="">Location</a>
+            <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lgg" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Location</a>
           </li>
           <!-- The Modal -->
           <div class="modal fade bd-example-modal-lgg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -192,7 +193,7 @@
             </div>
           </div>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg" href="">About Us</a>
+            <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg" href=""><i class="fa fa-podcast" aria-hidden="true"></i> About Us</a>
           </li>
           <!-- The Modal -->
           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -263,7 +264,7 @@
       <h1 style="text-align: center; font-weight: bold">Services</h1>
       <div class="row text-center row-setting">
         <div class="col-sm-4 col-md-4 d-block m-auto">
-          <div class="imgsetting d-block m-auto bg-warning">
+          <div class="imgsetting d-block m-auto bg-info">
             <i class="fa fa-id-card fa-3x text-white mt-4"></i>
           </div>
 
@@ -272,7 +273,7 @@
         </div>
 
         <div class="col-sm-4">
-          <div class="imgsetting d-block m-auto bg-warning">
+          <div class="imgsetting d-block m-auto bg-info">
             <i class="fa fa-keyboard-o fa-3x text-white mt-4"></i>
           </div>
 
@@ -281,7 +282,7 @@
         </div>
 
         <div class="col-sm-4">
-          <div class="imgsetting d-block m-auto bg-warning">
+          <div class="imgsetting d-block m-auto bg-info">
             <i class="fa fa-stack-exchange fa-3x text-white mt-4"></i>
           </div>
 
