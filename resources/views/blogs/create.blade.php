@@ -32,7 +32,7 @@
             </div>
             <div class="col-6">
                 <label>Descriptions</label>
-                <input type="text" name="descriptions" class="form-control" placeholder="descriptions">
+                <textarea type="text" name="descriptions" class="form-control" placeholder="descriptions"></textarea>
                 <br>
             </div>
         </div>

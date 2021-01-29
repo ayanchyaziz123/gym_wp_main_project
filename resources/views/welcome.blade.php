@@ -147,9 +147,10 @@
         <h2>About Me</h2>
         <h5>Photo of me:</h5>
         <img src="https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg" class="img-fluid">
-        <p class="mt-3">Email : aaziz9642@gmail.com</p>
-        <p>Mobile : 01759773446</p>
-        <h3>Some Links</h3>
+        <span class="mt-3">Name : Azizur Rahman Chy Ayan</span><br>
+        <span class="mt-3">Email : aaziz9642@gmail.com</span><br>
+        <span>Mobile : 01759773446</span>
+        <h3 class="mt-5">Some Links</h3>
         <p>to see information about us</p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
@@ -247,7 +248,6 @@
         </ul>
         <hr class="d-sm-none">
       </div>
-      <div style="margin-bottom: 1100px;"></div>
 
      
 
@@ -274,33 +274,43 @@
     </div>
     <!--row 2 -->
     <div style="margin-top: 200px"></div>
-    <h1 style="text-align: center; font-weight: bold">Services</h1>
+    <h1 style="text-align: center; font-weight: bold">WHY YOU JOIN WITH US</h1>
+    <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4 text-center">
+    <p>Stars fowl deep she greater bearing to seed dont is let you're appear first thing saying it years abundantly fowl tree you shall also</p>
+    </div>
+    <div class="col-4">
+    </div>
+    </div>
+  
     <div class="row text-center row-setting">
       <div class="col-sm-4 col-md-4 d-block m-auto">
         <div class="imgsetting d-block m-auto bg-info">
           <i class="fa fa-id-card fa-3x text-white mt-4"></i>
         </div>
 
-        <h2>Information</h2>
-        <p>through this website you will get all information of MU cse44th</p>
+        <h2>Qualified Instructor</h2>
+        <p>Stars fowl deep she greater bearing to seed dont is let you're appear first thing saying it years abundantly fowl tree you shall</p>
       </div>
 
       <div class="col-sm-4">
         <div class="imgsetting d-block m-auto bg-info">
-          <i class="fa fa-keyboard-o fa-3x text-white mt-4"></i>
+          <i class="fa fa fa-hospital-o fa-3x text-white mt-4"></i>
         </div>
 
-        <h2>Learning</h2>
-        <p>You can learn through this website</p>
+        <h2>fTons of Equipment</h2>
+        <p>Stars fowl deep she greater bearing to seed dont is let you're appear first thing saying it years abundantly fowl tree you shall</p>
       </div>
 
       <div class="col-sm-4">
         <div class="imgsetting d-block m-auto bg-info">
-          <i class="fa fa-stack-exchange fa-3x text-white mt-4"></i>
+          <i class="fa fa-bath fa-3x text-white mt-4"></i>
         </div>
 
-        <h2>Sharing</h2>
-        <p>You can share your idea through this website</p>
+        <h2>Ralaxation & Meditation</h2>
+        <p>Stars fowl deep she greater bearing to seed dont is let you're appear first thing saying it years abundantly fowl tree you shall</p>
       </div>
     </div>
 
