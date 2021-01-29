@@ -115,23 +115,23 @@
     </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://media.istockphoto.com/photos/empty-gym-picture-id1132006407?k=6&m=1132006407&s=612x612&w=0&h=vOx89bJoTm6tqEMRRZxsmzfdr1jwrmrbE-0yfm7sm74=" alt="Los Angeles" width="1100" style="max-height: 500px;">
+        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Los Angeles" width="1100" style="max-height: 500px;">
         <div class="carousel-caption">
-          <h3>Our Room</h3>
+          <h3>Workout</h3>
           <p>We had such a great time in LA!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://media.istockphoto.com/photos/gym-without-people-with-large-group-of-exercise-machines-picture-id936381808?k=6&m=936381808&s=612x612&w=0&h=pUrYUmK7M1QZk710iAA19Tcx4TZKmCTmVOBXt-8wq_0=" alt="Chicago" width="1100" height="500" style="max-height: 500px;">
+        <img src="https://blog.bodysolid.com/wp-content/uploads/92517-51Fitness.jpg" alt="Chicago" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
-          <h3>Our Gym</h3>
+          <h3>TopGym</h3>
           <p>Thank you, Chicago!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://media.istockphoto.com/photos/gym-picture-id952552262?k=6&m=952552262&s=612x612&w=0&h=tJ2sVXHvZrr_diY8TlbeoF7bzzpycgU01raoyx-RF6M=" alt="New York" width="1100" height="500" style="max-height: 500px;">
+        <img src="https://www.gymstarters.com/wp-content/uploads/thumbnail_IMG_1107.jpg" alt="New York" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
-          <h3>This is great</h3>
+          <h3>Fitfloss</h3>
           <p>We love the Big Apple!</p>
         </div>
       </div>
