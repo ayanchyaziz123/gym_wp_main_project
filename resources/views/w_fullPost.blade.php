@@ -50,7 +50,7 @@
         <p>Resize this responsive page to see the effect!</p>
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark ">
         <a class="navbar-brand" href="{{route('welcome')}}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -111,29 +111,29 @@
 
     <div class="container" style="margin-top:30px">
         <div class="row">
+        <div class="col-12">
+
+            <div class="card shadow"><img src="/upload/{{$blogs->img_path}}"></div>
 
 
 
 
 
 
-           <form>
-           @csrf
-        @method('PUT')
-         
-
-                <h4>{{$blog->title}}</h4>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Created By {{$blog->author}}</p>
-                <div><img src="/upload/{{$blog->img_path}}" style="max-height:100px" ;></div>
-                <p><i class="fa fa-calendar" aria-hidden="true"></i> Publised On {{$blog->created_at}}</p>
-            
-                    <p>{{$blog->descriptions}}...</p>
-              
-                <br>
-
-                </form>
 
 
+            <h4 class="mt-5">{{$blogs->title}}</h4></br>
+            <p><i class="fa fa-user" aria-hidden="true"></i>     Created By {{$blogs->author}}</p>
+
+            <p><i class="fa fa-calendar" aria-hidden="true"></i>     Publised On {{$blogs->created_at}}</p>
+
+            <p>   {{$blogs->descriptions}}</p>
+
+            <br>
+
+
+
+            </div>
         </div>
         <!--row 2 -->
         <div style="margin-top: 200px"></div>

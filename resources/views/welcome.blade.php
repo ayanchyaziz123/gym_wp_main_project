@@ -49,7 +49,7 @@
     <p>Resize this responsive page to see the effect!</p>
   </div>
 
-  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark">
     <a class="navbar-brand" href="{{route('welcome')}}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>

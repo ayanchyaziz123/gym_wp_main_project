@@ -64,9 +64,11 @@ class BlogUserController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show($id)
     {
-        return view('w_fullPost', compact('blog'));
+        return view('w_fullPost', [
+            'blogs' => Blog::findOrFail($id)
+        ]);
         
     }
 
