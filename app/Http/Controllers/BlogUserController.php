@@ -66,7 +66,8 @@ class BlogUserController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        return view('w_fullPost', compact('blog'));
+        
     }
 
     /**

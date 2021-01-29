@@ -36,12 +36,15 @@
       height: 90px;
       width: 90px;
     }
+    .cd{
+      color: black;
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="jumbotron text-center" style="margin-bottom:0">
+  <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
     <h1>ABC GYM</h1>
     <p>Resize this responsive page to see the effect!</p>
   </div>
@@ -144,13 +147,18 @@
   <div class="container" style="margin-top:30px">
     <div class="row">
       <div class="col-sm-4">
-        <h2>About Me</h2>
+        <h4>About Me</h4>
         <h5>Photo of me:</h5>
-        <img src="https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg" class="img-fluid">
+        <img src="aya.jpeg" class="img-fluid">
+        <div class="text-center">
         <span class="mt-3">Name : Azizur Rahman Chy Ayan</span><br>
         <span class="mt-3">Email : aaziz9642@gmail.com</span><br>
         <span>Mobile : 01759773446</span>
-        <h3 class="mt-5">Some Links</h3>
+        
+        
+        </div>
+       
+        <h4 class="mt-5">Some Links</h4>
         <p>to see information about us</p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
@@ -253,11 +261,11 @@
 
       <div class="col-sm-8">
       @foreach ($blogs as $blog)
-        <h2>{{$blog->title}}</h2>
-        <h5>{{$blog->author}}, {{$blog->created_at}}</h5>
+        <h4>{{$blog->title}}</h4>
+        <p><i class="fa fa-user" aria-hidden="true"></i> Created By {{$blog->author}}</p>
         <div><img src="/upload/{{$blog->img_path}}" style="max-height:100px" ;></div>
-        <p>Some text..</p>
-        <p>{{$blog->descriptions}}</p>
+        <p><i class="fa fa-calendar" aria-hidden="true"></i> Publised On {{$blog->created_at}}</p>
+        <a href="{{route('blogUser.show', $blog->id)}}" class="cd"><p>{{substr($blog->descriptions,0 , 200)}}...</p></a>
         <br>
         @endforeach
         <span>
@@ -319,8 +327,8 @@
 
 
 
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <p>ayans gym</p>
+  <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
+    <p>Copyright ©2021 All rights reserved | This template is made with  by  Ayan</p>
   </div>
 
 </body>
