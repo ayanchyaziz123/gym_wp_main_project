@@ -260,7 +260,16 @@
         <p>{{$blog->descriptions}}</p>
         <br>
         @endforeach
+        <span>
+      {{$blogs->links()}}
+      </span>
+      <style>
+      .w-5{
+        display: none;
+      }
+      </style>
       </div>
+      
      
     </div>
     <!--row 2 -->
