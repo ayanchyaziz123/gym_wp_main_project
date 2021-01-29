@@ -40,9 +40,9 @@
 
             <tr>
             <td><img src="/upload/{{$blog->img_path}}" style="max-height:50px";></td>
-                <td>{{$blog->title}}</td>
-                <td>{{$blog->descriptions}}</td>
-                <td>{{$blog->author}}</td>
+                <td>{{substr($blog->title,0 , 30)}}...</td>
+                <td>{{substr($blog->descriptions,0 , 30)}}...</td>
+                <td>{{substr($blog->author,0 , 20)}}...</td>
                 <td>
                     <form>
                         <a class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i></a>
@@ -55,7 +55,15 @@
             </tr>
 
             @endforeach
+            
         </table>
+        {{$blogs->links()}}
+      </span>
+      <style>
+      .w-5{
+        display: none;
+      }
+      </style>
 
     </div>
 
