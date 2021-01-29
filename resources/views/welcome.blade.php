@@ -26,14 +26,16 @@
       height: 100px;
       width: 100px;
     }
+
     .row-setting {
-        margin: 80px 0px !important;
-      }
-      .imgsetting {
-        border-radius: 40%;
-        height: 90px;
-        width: 90px;
-      }
+      margin: 80px 0px !important;
+    }
+
+    .imgsetting {
+      border-radius: 40%;
+      height: 90px;
+      width: 90px;
+    }
   </style>
 </head>
 
@@ -151,7 +153,7 @@
         <p>to see information about us</p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link active bg-info" href="{{route('welcome')}}"><i class="fa fa-home" aria-hidden="true"></i>  Home</a>
+            <a class="nav-link active bg-info" href="{{route('welcome')}}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lgg" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Location</a>
@@ -245,51 +247,50 @@
         </ul>
         <hr class="d-sm-none">
       </div>
+
+      @foreach ($blogs as $blog)
+
       <div class="col-sm-8">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg">Fake Image</div>
+        <h2>{{$blog->title}}</h2>
+        <h5>{{$blog->author}}, Dec 7, 2017</h5>
+        <div><img src="/upload/{{$blog->img_path}}" style="max-height:50px" ;></div>
         <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p>{{$blog->descriptions}}</p>
         <br>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg">Fake Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      @endforeach
+    </div>
+    <!--row 2 -->
+    <div style="margin-top: 200px"></div>
+    <h1 style="text-align: center; font-weight: bold">Services</h1>
+    <div class="row text-center row-setting">
+      <div class="col-sm-4 col-md-4 d-block m-auto">
+        <div class="imgsetting d-block m-auto bg-info">
+          <i class="fa fa-id-card fa-3x text-white mt-4"></i>
+        </div>
+
+        <h2>Information</h2>
+        <p>through this website you will get all information of MU cse44th</p>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="imgsetting d-block m-auto bg-info">
+          <i class="fa fa-keyboard-o fa-3x text-white mt-4"></i>
+        </div>
+
+        <h2>Learning</h2>
+        <p>You can learn through this website</p>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="imgsetting d-block m-auto bg-info">
+          <i class="fa fa-stack-exchange fa-3x text-white mt-4"></i>
+        </div>
+
+        <h2>Sharing</h2>
+        <p>You can share your idea through this website</p>
       </div>
     </div>
-      <!--row 2 -->
-      <div style="margin-top: 200px"></div>
-      <h1 style="text-align: center; font-weight: bold">Services</h1>
-      <div class="row text-center row-setting">
-        <div class="col-sm-4 col-md-4 d-block m-auto">
-          <div class="imgsetting d-block m-auto bg-info">
-            <i class="fa fa-id-card fa-3x text-white mt-4"></i>
-          </div>
-
-          <h2>Information</h2>
-          <p>through this website you will get all information of MU cse44th</p>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="imgsetting d-block m-auto bg-info">
-            <i class="fa fa-keyboard-o fa-3x text-white mt-4"></i>
-          </div>
-
-          <h2>Learning</h2>
-          <p>You can learn through this website</p>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="imgsetting d-block m-auto bg-info">
-            <i class="fa fa-stack-exchange fa-3x text-white mt-4"></i>
-          </div>
-
-          <h2>Sharing</h2>
-          <p>You can share your idea through this website</p>
-        </div>
-      </div>
 
 
   </div>

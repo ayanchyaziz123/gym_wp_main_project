@@ -39,7 +39,7 @@
 
 
             <tr>
-            <td><img src="{{$blog->img_path}}"></td>
+            <td><img src="/upload/{{$blog->img_path}}" style="max-height:50px";></td>
                 <td>{{$blog->title}}</td>
                 <td>{{$blog->descriptions}}</td>
                 <td>{{$blog->author}}</td>

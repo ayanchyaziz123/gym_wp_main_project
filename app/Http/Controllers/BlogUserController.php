@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class BlogUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::latest()->paginate(5);
-        return view('blogs.index', compact('blogs'));
+        return view('welcome', compact('blogs'));
         
     }
 

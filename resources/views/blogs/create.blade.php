@@ -19,7 +19,7 @@
     </x-slot>
 
 <div class="container mt-5">
-    <form action="{{route('adminBlog.store')}}" method="POST">
+    <form action="{{route('adminBlog.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
 

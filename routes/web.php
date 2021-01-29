@@ -13,12 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('blogUser', \App\Http\Controllers\BlogUserController::class);
+
 Route::get('/', function () {
-    return view('welcome');
+    $app = app();
+    $controller = $app->make('\App\Http\Controllers\BlogUserController');
+    return $controller->callAction('index', $parameters = array());
 })->name('welcome');
+
+
 Route::resource('contacts', \App\Http\Controllers\ContactController::class);
 Route::resource('adminContacts', \App\Http\Controllers\AdminContactController::class);
 Route::resource('adminBlog', \App\Http\Controllers\BlogController::class);
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -29,9 +36,4 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('users', \App\Http\Controllers\UsersController::class);
     Route::resource('members', \App\Http\Controllers\MembersController::class);
-    
-    
 });
-
-
-
