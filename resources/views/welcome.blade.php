@@ -247,18 +247,21 @@
         </ul>
         <hr class="d-sm-none">
       </div>
+      <div style="margin-bottom: 1100px;"></div>
 
-      @foreach ($blogs as $blog)
+     
 
       <div class="col-sm-8">
+      @foreach ($blogs as $blog)
         <h2>{{$blog->title}}</h2>
-        <h5>{{$blog->author}}, Dec 7, 2017</h5>
-        <div><img src="/upload/{{$blog->img_path}}" style="max-height:50px" ;></div>
+        <h5>{{$blog->author}}, {{$blog->created_at}}</h5>
+        <div><img src="/upload/{{$blog->img_path}}" style="max-height:100px" ;></div>
         <p>Some text..</p>
         <p>{{$blog->descriptions}}</p>
         <br>
+        @endforeach
       </div>
-      @endforeach
+     
     </div>
     <!--row 2 -->
     <div style="margin-top: 200px"></div>
