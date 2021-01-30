@@ -46,7 +46,7 @@
 
   <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
     <h1>ABC GYM</h1>
-    <p>Resize this responsive page to see the effect!</p>
+    <p>A GYM  center</p>
   </div>
 
   <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark">
@@ -181,12 +181,12 @@
                     <h5>Our Address</h5>
                     <address style="font-size: 100%">
                       121, Clear Water Bay Road<br>
-                      Clear Water Bay, Kowloon<br>
-                      HONG KONG<br>
+                      Sylhet, Sylhet<br>
+                      Bangladesh<br>
                       <i class="fa fa-phone"></i>: +852 1234 5678<br>
                       <i class="fa fa-fax"></i>: +852 8765 4321<br>
                       <i class="fa fa-envelope"></i>:
-                      <a href="mailto:confusion@food.net">confusion@food.net</a>
+                      <a href="mailto:confusion@food.net">aaziz9642@.net</a>
                     </address>
                   </div>
                   <div class="col-12 col-sm-6 offset-sm-1">
@@ -196,7 +196,7 @@
                     <div class="btn-group" role="group">
                       <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
                       <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                      <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
+                      <a role="button" class="btn btn-success" href="aaziz9642@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
                     </div>
                   </div>
                 </div>
@@ -217,7 +217,7 @@
                 <div class="row mt-5 mb-5">
                   <div class="col-12 col-md-6">
 
-                    <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                    <p>Started in 2015, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                     <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
                   </div>
                   <div class="col-12 col-sm-6">
@@ -226,13 +226,13 @@
                       <div class="card-body">
                         <dl class="row">
                           <dt class="col-6">Started</dt>
-                          <dd class="col-6">3 Feb. 2013</dd>
+                          <dd class="col-6">3 Feb. 2015</dd>
                           <dt class="col-6">Major Stake Holder</dt>
                           <dd class="col-6">HK Fine Foods Inc.</dd>
                           <dt class="col-6">Last Year's Turnover</dt>
                           <dd class="col-6">$1,250,375</dd>
                           <dt class="col-6">Employees</dt>
-                          <dd class="col-6">40</dd>
+                          <dd class="col-6">10</dd>
                         </dl>
                       </div>
                     </div>

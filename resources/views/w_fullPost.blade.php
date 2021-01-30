@@ -47,7 +47,7 @@
 
     <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
         <h1>ABC GYM</h1>
-        <p>Resize this responsive page to see the effect!</p>
+        <p>A GYM  center</p>
     </div>
 
     <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark ">
