@@ -183,7 +183,8 @@
 
 
     <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
-        <p>Copyright ©2021 All rights reserved | This template is made with by Ayan</p>
+        <h4>Copyright ©2021 All rights reserved | This template is made with by Ayan</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero consequuntur maxime asperiores sit ipsum, molestias eligendi blanditiis aperiam dicta dignissimos. Voluptates maxime voluptatum possimus officia fuga laborum, dicta accusantium.</p>
     </div>
 
 </body>

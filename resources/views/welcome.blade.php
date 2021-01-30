@@ -118,21 +118,21 @@
         <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Los Angeles" width="1100" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>Workout</h3>
-          <p>We had such a great time in LA!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat nostrum voluptas necessitatibus velit animi dolores molestiae sint saepe. Ipsam, nisi? Vero debitis quibusdam animi quisquam incidunt, illum molestias explicabo!</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="https://blog.bodysolid.com/wp-content/uploads/92517-51Fitness.jpg" alt="Chicago" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>TopGym</h3>
-          <p>Thank you, Chicago!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quam esse dolorum saepe dignissimos delectus, nulla minus rem veniam temporibus tenetur voluptatem, nam eum ipsum? Et eaque aspernatur cupiditate quam.!</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="https://www.gymstarters.com/wp-content/uploads/thumbnail_IMG_1107.jpg" alt="New York" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>Fitfloss</h3>
-          <p>We love the Big Apple!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae corrupti animi pariatur ipsam voluptatibus sed et non sunt perferendis eum suscipit, harum, eius quas nemo fugiat molestias quibusdam praesentium.</p>
         </div>
       </div>
     </div>
@@ -240,8 +240,7 @@
                   <div class="col-12">
                     <div class="card card-body bg-light">
                       <blockquote class="blockquote">
-                        <p class="mb-0">You better cut the pizza in four pieces because
-                          I'm not hungry enough to eat six.</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo laboriosam nisi incidunt magnam? Repellat quidem molestias adipisci quasi fugit maiores explicabo, facere autem dicta repellendus sapiente molestiae, corporis praesentium?</p>
                         <footer class="blockquote-footer">Yogi Berra,
                           <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
                             P. Pepe, Diversion Books, 2014</cite>
@@ -330,7 +329,9 @@
 
 
   <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
-    <p>Copyright ©2021 All rights reserved | This template is made with  by  Ayan</p>
+    <h4>Copyright ©2021 All rights reserved | This template is made with  by  Ayan</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui porro debitis delectus fuga officiis rerum laboriosam fugit, doloribus nesciunt, veritatis placeat quas sed modi maiores sunt repudiandae, magnam accusamus ullam.</p>
+
   </div>
 
 </body>
