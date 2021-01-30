@@ -64,9 +64,11 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show($id)
     {
-        //
+        return view('blogs.show', [
+            'blogs' => Blog::findOrFail($id)
+        ]);
     }
 
     /**
@@ -75,9 +77,11 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit($id)
     {
-        //
+        return view('blogs.edit', [
+            'blogs' => Blog::findOrFail($id)
+        ]);
     }
 
     /**
@@ -87,9 +91,26 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request, Blog $data)
     {
-        //
+        $request->validate([
+            'title'=> 'required',
+            'descriptions'=>'required',
+            'author'=>'required',
+            'img_path' => 'required|image|max:5048',
+
+        ]);
+        $imageName = time().'.'.$request->img_path->extension();  
+        $request->img_path->move(public_path('upload'), $imageName);
+        $data = new Blog();
+        $data->title = $request->title;
+        $data->descriptions = $request->descriptions;
+        $data->author = $request->author;
+        $data->img_path = $imageName;
+        $data->update();
+       
+
+        return redirect()->route('adminBlog.index')->with('success', 'Blog created succesfully!!');
     }
 
     /**
@@ -98,8 +119,9 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $blog)
+    public function destroy($id)
     {
-        //
+        Blog::destroy($id);
+        return redirect()->route('adminBlog.index')->with('success', 'profile Deleted succesfully!!');
     }
 }

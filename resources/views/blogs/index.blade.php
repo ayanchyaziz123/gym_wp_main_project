@@ -44,9 +44,9 @@
                 <td>{{substr($blog->descriptions,0 , 30)}}...</td>
                 <td>{{substr($blog->author,0 , 20)}}...</td>
                 <td>
-                    <form>
-                        <a class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                        <a class="btn btn-warning m-2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                    <form action="{{route('adminBlog.destroy', $blog->id)}}" method="POST">
+                        <a class="btn btn-primary" href="{{route('adminBlog.show', $blog->id)}}"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        <a class="btn btn-warning m-2" href="{{route('adminBlog.edit', $blog->id)}}"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></a>
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>

@@ -69,7 +69,7 @@
   </div>
   @endif
   <!-- The Modal -->
-  <div class="modal" id="myModal">
+  <div class="modal " id="myModal">
     <div class="modal-dialog">
       <div class="modal-content p-3">
 
@@ -266,10 +266,12 @@
         <div><img src="/upload/{{$blog->img_path}}" style="max-height:100px" ;></div>
         <p><i class="fa fa-calendar" aria-hidden="true"></i> Publised On {{$blog->created_at}}</p>
         <a href="{{route('blogUser.show', $blog->id)}}" class="cd"><p>{{substr($blog->descriptions,0 , 200)}}...</p></a>
+        <a class="btn btn-info mb-4" href="{{route('blogUser.show', $blog->id)}}" >Read more</a>
         <br>
+      
         @endforeach
         <span>
-      {{$blogs->links()}}
+      {!! $blogs->links() !!}
       </span>
       <style>
       .w-5{
