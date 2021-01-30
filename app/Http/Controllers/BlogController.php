@@ -91,7 +91,7 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $data)
+    public function update(Request $request, $data)
     {
         $request->validate([
             'title'=> 'required',

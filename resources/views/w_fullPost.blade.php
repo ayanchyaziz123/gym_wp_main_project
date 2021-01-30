@@ -150,7 +150,7 @@
 
         <div class="row text-center row-setting">
             <div class="col-sm-4 col-md-4 d-block m-auto">
-                <div class="imgsetting d-block m-auto bg-info">
+                <div class="imgsetting d-block m-auto bg-warning">
                     <i class="fa fa-id-card fa-3x text-white mt-4"></i>
                 </div>
 
@@ -159,7 +159,7 @@
             </div>
 
             <div class="col-sm-4">
-                <div class="imgsetting d-block m-auto bg-info">
+                <div class="imgsetting d-block m-auto bg-warning">
                     <i class="fa fa fa-hospital-o fa-3x text-white mt-4"></i>
                 </div>
 
@@ -168,7 +168,7 @@
             </div>
 
             <div class="col-sm-4">
-                <div class="imgsetting d-block m-auto bg-info">
+                <div class="imgsetting d-block m-auto bg-warning">
                     <i class="fa fa-bath fa-3x text-white mt-4"></i>
                 </div>
 
