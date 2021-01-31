@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>ABC GYM</title>
+  <title>FITZONE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -36,20 +36,38 @@
       height: 90px;
       width: 90px;
     }
-    .cd{
+
+    .cd {
       color: black;
+    }
+
+    .im {
+      max-height: 90px;
+      max-width: 100px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
-    <h1>ABC GYM</h1>
-    <p>A GYM  center</p>
+  <div class="jumbotron  bg-dark text-white" style="margin-bottom:0">
+    <div class="container mb-0">
+
+      <div class="row">
+        <div class="col-4 col-sm-2">
+          <img src="logo.jpg" class="img-fluid im rounded-circle">
+        </div>
+        <div class="col-4">
+          <h4>FITZONE</h4>
+          <p>Go hard or go home</p>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
-  <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark">
+  <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark" style="margin-top: -40px;">
     <a class="navbar-brand" href="{{route('welcome')}}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -132,7 +150,8 @@
         <img src="https://www.gymstarters.com/wp-content/uploads/thumbnail_IMG_1107.jpg" alt="New York" width="1100" height="500" style="max-height: 500px;">
         <div class="carousel-caption">
           <h3>Fitfloss</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae corrupti animi pariatur ipsam voluptatibus sed et non sunt perferendis eum suscipit, harum, eius quas nemo fugiat molestias quibusdam praesentium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae corrupti animi p
+          ariatur ipsam voluptatibus sed et non sunt perferendis eum suscipit, harum, eius quas nemo fugiat molestias quibusdam praesentium.</p>
         </div>
       </div>
     </div>
@@ -151,13 +170,13 @@
         <h5>Photo of me:</h5>
         <img src="aya.jpeg" class="img-fluid">
         <div class="text-center">
-        <span class="mt-3">Name : Azizur Rahman Chy Ayan</span><br>
-        <span class="mt-3">Email : aaziz9642@gmail.com</span><br>
-        <span>Mobile : 01759773446</span>
-        
-        
+          <span class="mt-3">Name : Azizur Rahman Chy Ayan</span><br>
+          <span class="mt-3">Email : aaziz9642@gmail.com</span><br>
+          <span>Mobile : 01759773446</span>
+
+
         </div>
-       
+
         <h4 class="mt-5">Some Links</h4>
         <p>to see information about us</p>
         <ul class="nav nav-pills flex-column">
@@ -256,44 +275,46 @@
         <hr class="d-sm-none">
       </div>
 
-     
+
 
       <div class="col-sm-8">
-      @foreach ($blogs as $blog)
+        @foreach ($blogs as $blog)
         <h4>{{$blog->title}}</h4>
         <p><i class="fa fa-user" aria-hidden="true"></i> Created By {{$blog->author}}</p>
         <div><img src="/upload/{{$blog->img_path}}" style="max-height:100px" ;></div>
         <p><i class="fa fa-calendar" aria-hidden="true"></i> Publised On {{$blog->created_at}}</p>
-        <a href="{{route('blogUser.show', $blog->id)}}" class="cd"><p>{{substr($blog->descriptions,0 , 200)}}...</p></a>
-        <a class="btn btn-info mb-4" href="{{route('blogUser.show', $blog->id)}}" >Read more</a>
+        <a href="{{route('blogUser.show', $blog->id)}}" class="cd">
+          <p>{{substr($blog->descriptions,0 , 200)}}...</p>
+        </a>
+        <a class="btn btn-info mb-4" href="{{route('blogUser.show', $blog->id)}}">Read more</a>
         <br>
-      
+
         @endforeach
         <span>
-      {!! $blogs->links() !!}
-      </span>
-      <style>
-      .w-5{
-        display: none;
-      }
-      </style>
+          {!! $blogs->links() !!}
+        </span>
+        <style>
+          .w-5 {
+            display: none;
+          }
+        </style>
       </div>
-      
-     
+
+
     </div>
     <!--row 2 -->
     <div style="margin-top: 200px"></div>
     <h1 style="text-align: center; font-weight: bold">WHY YOU JOIN WITH US</h1>
     <div class="row">
-    <div class="col-4">
+      <div class="col-4">
+      </div>
+      <div class="col-4 text-center">
+        <p>Stars fowl deep she greater bearing to seed dont is let you're appear first thing saying it years abundantly fowl tree you shall also</p>
+      </div>
+      <div class="col-4">
+      </div>
     </div>
-    <div class="col-4 text-center">
-    <p>Stars fowl deep she greater bearing to seed dont is let you're appear first thing saying it years abundantly fowl tree you shall also</p>
-    </div>
-    <div class="col-4">
-    </div>
-    </div>
-  
+
     <div class="row text-center row-setting">
       <div class="col-sm-4 col-md-4 d-block m-auto">
         <div class="imgsetting d-block m-auto bg-warning">
@@ -329,7 +350,7 @@
 
 
   <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
-    <h4>Copyright ©2021 All rights reserved | This template is made with  by  Ayan</h4>
+    <h4>Copyright ©2021 All rights reserved | This template is made with by Ayan</h4>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui porro debitis delectus fuga officiis rerum laboriosam fugit, doloribus nesciunt, veritatis placeat quas sed modi maiores sunt repudiandae, magnam accusamus ullam.</p>
 
   </div>

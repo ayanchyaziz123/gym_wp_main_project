@@ -40,14 +40,32 @@
         .cd {
             color: black;
         }
+
+        .im {
+            max-height: 90px;
+            max-width: 100px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
-        <h1>ABC GYM</h1>
-        <p>A GYM  center</p>
+
+    <div class="jumbotron  bg-dark text-white" style="margin-bottom:0">
+        <div class="container mb-0">
+
+            <div class="row">
+                <div class="col-4 col-sm-2">
+                    <img src="https://image.freepik.com/free-vector/bodybuilders-fitness-club-logo_1284-45671.jpg" class="img-fluid im rounded-circle">
+                </div>
+                <div class="col-4">
+                    <h4>FITZONE</h4>
+                    <p>Go hard or go home</p>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
     <nav class="navbar sticky-top navbar-expand-sm bg-info navbar-dark ">
@@ -111,25 +129,25 @@
 
     <div class="container" style="margin-top:30px">
         <div class="row">
-        <div class="col-12">
+            <div class="col-12">
 
-            <div class="card shadow"><img src="/upload/{{$blogs->img_path}}"></div>
-
-
+                <div class="card shadow"><img src="/upload/{{$blogs->img_path}}"></div>
 
 
 
 
 
 
-            <h4 class="mt-5">{{$blogs->title}}</h4></br>
-            <p><i class="fa fa-user" aria-hidden="true"></i>     Created By {{$blogs->author}}</p>
 
-            <p><i class="fa fa-calendar" aria-hidden="true"></i>     Publised On {{$blogs->created_at}}</p>
 
-            <p>   {{$blogs->descriptions}}</p>
+                <h4 class="mt-5">{{$blogs->title}}</h4></br>
+                <p><i class="fa fa-user" aria-hidden="true"></i> Created By {{$blogs->author}}</p>
 
-            <br>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> Publised On {{$blogs->created_at}}</p>
+
+                <p> {{$blogs->descriptions}}</p>
+
+                <br>
 
 
 
