@@ -153,7 +153,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae corrupti animi p
           ariatur ipsam voluptatibus sed et non sunt perferendis eum suscipit, harum, eius quas nemo fugiat molestias quibusdam praesentium.</p>
         </div>
-      </div>
+     </div>
     </div>
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
