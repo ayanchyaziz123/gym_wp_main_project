@@ -167,9 +167,8 @@
     <div class="row">
       <div class="col-sm-4">
         <h4>About Me</h4>
-        <h5>Photo of me:</h5>
-        <img src="aya.jpeg" class="img-fluid">
-        <div class="text-center">
+        <img src="ayan.jpg" class="img-fluid rounded-circle" style="max-height: 200px;">
+        <div class="mt-2">
           <span class="mt-3">Name : Azizur Rahman Chy Ayan</span><br>
           <span class="mt-3">Email : aaziz9642@gmail.com</span><br>
           <span>Mobile : 01759773446</span>
