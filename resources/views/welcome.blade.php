@@ -151,9 +151,9 @@
         <div class="carousel-caption">
           <h3>Fitfloss</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae corrupti animi p
-          ariatur ipsam voluptatibus sed et non sunt perferendis eum suscipit, harum, eius quas nemo fugiat molestias quibusdam praesentium.</p>
+            ariatur ipsam voluptatibus sed et non sunt perferendis eum suscipit, harum, eius quas nemo fugiat molestias quibusdam praesentium.</p>
         </div>
-     </div>
+      </div>
     </div>
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -277,17 +277,21 @@
 
 
 
+
+
       <div class="col-sm-8">
         @foreach ($blogs as $blog)
         <h4>{{$blog->title}}</h4>
         <p><i class="fa fa-user" aria-hidden="true"></i> Created By {{$blog->author}}</p>
         <div><img src="/upload/{{$blog->img_path}}" style="max-height:100px" ;></div>
         <p><i class="fa fa-calendar" aria-hidden="true"></i> Publised On {{$blog->created_at}}</p>
-        <a href="{{route('blogUser.show', $blog->id)}}" class="cd">
-          <p>{{substr($blog->descriptions,0 , 200)}}...</p>
-        </a>
+        @if(strlen($blog->descriptions) > 200) <p>{{substr($blog->descriptions,0 , 200)}}...</p>
         <a class="btn btn-info mb-4" href="{{route('blogUser.show', $blog->id)}}">Read more</a>
         <br>
+        @else
+        <p>{{$blog->descriptions}}</p>
+        @endif
+
 
         @endforeach
         <span>
